@@ -1,4 +1,4 @@
-::root {
+:root {
   --accent: #174180;
   --accent-light: #3764a7;
   --pure-white: #fff;
@@ -21,15 +21,15 @@ html {
   color: var(--accent);
 }
 
+.header {
+  background-color: var(--accent);
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
   border: 1px solid black;
-}
-
-.header {
-  background-color: var(--accent);
 }
 
 .header a {
@@ -49,11 +49,15 @@ html {
   font-size: 30px;
   line-height: 30px;
   font-weight: 800;
-  left: 3px;
+  letter-spacing: 3px;
 }
 
 .header-menu {
+  width: 78%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -62,7 +66,7 @@ html {
 .header-menu-link {
   font-size: 16px;
   line-height: 16px;
-  padding: 15;
+  padding: 15px 15px;
   text-transform: uppercase;
   transition: background-color 0.3s;
 }
