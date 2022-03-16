@@ -10,15 +10,15 @@ html {
 }
 
 *,
-*::behavior,
-*::after {
+*:befor,
+*:after {
   box-sizing: inherit;
 }
 
 .body {
-  margin: 0;
   font-family: "Open Sans", sans-serif;
   color: var(--accent);
+  margin: 0;
 }
 
 .header {
@@ -29,7 +29,7 @@ html {
   width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 
 .section {
